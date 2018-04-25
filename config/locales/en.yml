@@ -1,5 +1,15 @@
 en:
-  hello: "Hello world"
-  layout:
-    application:
-      title: "Library Management"
+  helpers:
+    application_helper:
+      base_title: "Libraly Management"
+  library_management:
+    home:
+      welcome: "Welcome!"
+    help:
+      help: "Help"
+  layouts:
+    header:
+      library: "LIBRARY"
+      home: "Home"
+      help: "Help"
+      login: "Log in"

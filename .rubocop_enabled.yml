@@ -525,6 +525,7 @@ Layout/TrailingBlankLines:
 # Style/TrailingComma:
 #Style/TrailingCommaInLiteral:
   Style/TrailingCommaInHashLiteral:
+
   Description: "Checks for trailing comma in parameter lists and literals."
   Enabled: true
 
@@ -593,11 +594,12 @@ Lint/AmbiguousRegexpLiteral:
                  a method invocation without parenthesis.
   Enabled: true
 
-Layout/BlockAlignment:
+
+Lint/BlockAlignment:
   Description: "Align block ends correctly."
   Enabled: true
 
-Layout/ConditionPosition:
+Lint/ConditionPosition:
   Description: "Checks for condition placed in a confusing position relative to the keyword."
   Enabled: true
 
@@ -606,6 +608,7 @@ Lint/Debugger:
   Enabled: true
 
 Layout/DefEndAlignment:
+
   Description: "Align ends corresponding to defs correctly."
   Enabled: true
 
@@ -626,6 +629,7 @@ Lint/EmptyInterpolation:
   Enabled: true
 
 Layout/EndAlignment:
+
   Description: "Align ends correctly."
   Enabled: true
 

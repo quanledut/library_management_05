@@ -1,0 +1,23 @@
+<%= provide(:title, @author.name) %>
+
+<% if @authors.blank? %>
+  <p>There are not any authors currently in the system.</p>
+<% else %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th><strong>Name:</strong></th>
+        <th><strong>Detail:</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @authors.name %></td>
+        <td><%= @authors.detail %></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
+
+<%= link_to t(".edit"), edit_author_path %>
+<%= link_to t(".back"), authors_path %>

@@ -31,6 +31,7 @@
         <td><%= link_to '<i class="fa fa-list fa-lg btn btn-primary" aria-hidden="true" data-toggle="tooltip" title="Show"></i>'.html_safe, {action: :show, :id => book.id} %></td>
         <td><%= link_to '<i class="fa fa-pencil fa-lg btn btn-primary" aria-hidden="true" data-toggle="tooltip" title="Edit"></i>'.html_safe, {action: :edit, :id => book.id} %></td>
         <td><%= link_to '<i class="fa fa-times fa-lg btn btn-primary" aria-hidden="true" data-toggle="tooltip" title="Delete"></i>'.html_safe, book, method: :delete, data: {confirm: "You sure?"} %></td>
+        <td><%= link_to '<i class="fa fa-plus fa-lg btn btn-primary" aria-hidden="true" data-toggle="tooltip" title="Edit"></i>'.html_safe, borrow_books_path(:book_id => book) %></td>
       </tr>
     </tbody>
   <% end %>

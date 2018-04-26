@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'carts/show'
+
   root "library_management#home"
   get "/signup", to: "users#new"
   get "/help", to: "library_management#help"
@@ -12,4 +14,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :books
   resources :users
+  resources :borrow_books
+  resources :borrows
+  resources :carts
 end

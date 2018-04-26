@@ -2,6 +2,16 @@ en:
   helpers:
     application_helper:
       base_title: "Libraly Management"
+  authors:
+    new:
+      add: "Add author"
+      new_author: "Add new author"
+      back: "Back"
+  books:
+    new:
+      add: "Add book"
+      new_book: "Add new book"
+      back: "Back"
   library_management:
     home:
       welcome: "Welcome!"
@@ -13,3 +23,9 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+  shared:
+    error_messages:
+      form_contain: "The form contains"
+      error:
+        one: "%{count} error"
+        other: "%{count} errors"

@@ -1,7 +1,8 @@
+
 User.create!(name:  "Admin",
              email: "admin@example.com",
-             password:              "password",
-             password_confirmation: "password",
+             password:              "pass",
+             password_confirmation: "pass",
              role: 0,
              phone_number: "+84123456789",
              create_date: Time.zone.now,

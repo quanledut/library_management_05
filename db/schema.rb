@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20180427071619) do
   create_table "borrows", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "user_id"
     t.date "borrow_date"
-    t.integer "status"
+    t.integer "status", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_borrows_on_user_id"
@@ -87,7 +87,7 @@ ActiveRecord::Schema.define(version: 20180427071619) do
     t.string "address"
     t.date "create_date"
     t.string "password_digest"
-    t.integer "role"
+    t.integer "role", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

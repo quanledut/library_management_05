@@ -2,6 +2,49 @@ en:
   helpers:
     application_helper:
       base_title: "Libraly Management"
+  authors:
+    index:
+      author: "All authors"
+      show: "Show"
+      edit: "Edit"
+      delete: "Delete"
+      add_author: "Add new author"
+    new:
+      add: "Add author"
+      new_author: "Add new author"
+      back: "Back"
+    edit:
+      edit: "Editing Book"
+      back: "Back"
+    show:
+      back: "Back"
+      edit: "Edit"
+  categories:
+    index:
+      category: "All categores"
+    new:
+      add: "Add category"
+      new_category: "Add new category"
+      back: "Back"
+    show:
+      back: "Back"
+      edit: "Edit"
+    edit:
+      edit: "Edit Category"
+      back: "Back"
+  books:
+    index:
+      book: "All book"
+    new:
+      add: "Add book"
+      new_book: "Add new book"
+      back: "Back"
+    show:
+      edit: "Edit"
+      back: "Back"
+    edit:
+      edit: "Edit book"
+      back: "Back"
   library_management:
     home:
       welcome: "Welcome!"
@@ -13,3 +56,9 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+  shared:
+    error_messages:
+      form_contain: "The form contains"
+      error:
+        one: "%{count} error"
+        other: "%{count} errors"

@@ -1,0 +1,5 @@
+dependent: :destroy
+maximum_name: 50
+maximum_email: 200
+maximum_password: 6
+maximum_phone_num: 13

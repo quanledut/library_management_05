@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  author: one
+  price: 1
+  publisher: MyString
+  detail: MyString
+  category: one
+  total_amount: 1
+  ready_amount: 1
+
+two:
+  name: MyString
+  author: two
+  price: 1
+  publisher: MyString
+  detail: MyString
+  category: two
+  total_amount: 1
+  ready_amount: 1

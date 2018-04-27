@@ -1,0 +1,5 @@
+en:
+  hello: "Hello world"
+  layout:
+    application:
+      title: "Library Management"

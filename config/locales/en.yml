@@ -1,31 +1,60 @@
 en:
+
   helpers:
     application_helper:
       base_title: "Libraly Management"
+
   authors:
     new:
       add: "Add author"
       new_author: "Add new author"
       back: "Back"
+
   books:
     new:
       add: "Add book"
       new_book: "Add new book"
       back: "Back"
+
   library_management:
     home:
       welcome: "Welcome!"
     help:
       help: "Help"
+
   layouts:
     header:
       library: "LIBRARY"
       home: "Home"
       help: "Help"
       login: "Log in"
+      borrow_history: "Borrow History"
+      profile: "Profile"
+      setting: "Setting"
+      logout: "Logout"
+      users: "Users"
   shared:
     error_messages:
       form_contain: "The form contains"
       error:
         one: "%{count} error"
         other: "%{count} errors"
+  sessions:
+    new:
+      remember_me: "Remember me on this computer"
+      login: "Login"
+      title: "Login"
+
+  users:
+    new:
+      title: "Sign up"
+      p1: "This will be a signup page for new users."
+      confirm: "Confirmation"
+      create: "Create my account"
+    edit:
+      title: "Edit user"
+      p1: "Update your profile"
+      submit: "Save changes"
+      confirmation: "Confirmation"
+    index:
+      title: "All users"

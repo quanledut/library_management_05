@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem "config"
 gem "rails", "~> 5.1.6"
 gem "puma", "~> 3.7"
 gem "sass-rails", "~> 5.0"
@@ -21,11 +22,14 @@ gem "sprockets"
 # Use Capistrano for deployment
 # gem "capistrano-rails", group: :development
 gem "config"
+gem "will_paginate",           "3.1.6"
+gem "bootstrap-will_paginate", "1.0.0"
 
 gem "rb-readline"
 
 group :development, :test do
-  gem "mysql2", ">= 0.3.18", "< 0.6.0"
+  #gem "mysql2", ">= 0.3.18", "< 0.6.0"
+  gem "sqlite3"
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "capybara", "~> 2.13"

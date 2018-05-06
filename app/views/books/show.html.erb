@@ -1,37 +1,31 @@
 <%= provide(:title, @book.name) %>
 
-<div>
-  <strong>Name:</strong>
-  <%= @book.name %>
-</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Author</strong></th>
+      <th><strong>Price</strong></th>
+      <th><strong>Publisher</strong></th>
+      <th><strong>Detail</strong></th>
+      <th><strong>Category</strong></th>
+      <th><strong>Total amout</strong></th>
+      <th><strong>Ready amout</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @book.name %></td>
+      <td><%= @book.author.name %></td>
+      <td><%= @book.price %></td>
+      <td><%= @book.publisher %></td>
+      <td><%= @book.detail %></td>
+      <td><%= @book.category.name %></td>
+      <td><%= @book.total_amount %></td>
+      <td><%= @book.ready_amount %></td>
+    </tr>
+  </tbody>
+</table>
 
-<div>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</div>
-
-<div>
-  <strong>divrice:</strong>
-  <%= @book.divrice %>
-</div>
-
-<div>
-  <strong>Detail:</strong>
-  <%= @book.detail %>
-</div>
-
-<div>
-  <strong>Category:</strong>
-  <%= @book.category %>
-</div>
-
-<div>
-  <strong>Total amout:</strong>
-  <%= @book.total_amount %>
-</div>
-
-<div>
-  <strong>Ready ammout:</strong>
-  <%= @book.ready_amount %>
-</div>
-
+<%= link_to t(".edit"), edit_book_path %>
+<%= link_to t(".back"), books_path %>

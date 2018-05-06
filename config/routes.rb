@@ -18,4 +18,16 @@ Rails.application.routes.draw do
   resources :categories
   resources :books
   resources :users
+  get "/authors/index", to: "authors#index"
+  get "/authors/new", to: "authors#new"
+  get "/authors/show", to: "authors#show"
+  post "/authors/create", to: "authors#create"
+
+  get "/categories/new", to: "categories#new"
+  get "/categories/show", to: "categories#show"
+  post "/categories/create", to: "categories#create"
+
+  get "/books/new", to: "books#new"
+  post "/books/create", to: "books#create"
+
 end

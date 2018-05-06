@@ -1,5 +1,6 @@
 <%= provide(:title, @author.name) %>
 
+<<<<<<< HEAD
 <div>
   <strong>Name:</strong>
   <%= @author.name %>
@@ -9,3 +10,26 @@
   <strong>Detail:</strong>
   <%= @author.detail %>
 </div>
+=======
+<%= if @author.blank? %>
+  <p>There are not any authors currently in the system.</p>
+<% else %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th><strong>Name:</strong></th>
+        <th><strong>Detail:</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @author.name %></td>
+        <td><%= @author.detail %></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
+
+<%= link_to t(".edit"), edit_author_path %>
+<%= link_to t(".back"), authors_path %>
+>>>>>>> 7a682be7a2b95c24e03c984764508957ba69c98f

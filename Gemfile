@@ -30,6 +30,15 @@ gem "rb-readline"
 group :development, :test do
   #gem "mysql2", ">= 0.3.18", "< 0.6.0"
   gem "sqlite3"
+end
+gem "rb-readline"
+
+gem "font-awesome-rails"
+
+gem "mini_magick"
+
+group :development, :test do
+  gem "faker"
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "capybara", "~> 2.13"

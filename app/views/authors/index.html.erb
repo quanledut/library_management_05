@@ -1,0 +1,40 @@
+<%= provide(:title, "#{@author.count} authors") %>
+
+<h1><%= t ".author" %></h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Detail</th>
+    </tr>
+  </thead>
+
+  <% @author.each do |author| %>
+    <tbody>
+      <tr>
+        <td><%= author.name %></td>
+        <td><%= author.detail %></td>
+
+        <td><%= link_to '<i class="fa fa-list fa-lg btn btn-primary" aria-hidden="true" data-toggle="tooltip" title="Show"></i>'.html_safe, {action: :show, :id => author.id} %></td>
+        <td><%= link_to '<i class="fa fa-pencil fa-lg btn btn-primary" aria-hidden="true" data-toggle="tooltip" title="Edit"></i>'.html_safe, {action: :edit, :id => author.id} %></td>
+        <td><%= link_to '<i class="fa fa-times fa-lg btn btn-primary" aria-hidden="true" data-toggle="tooltip" title="Delete"></i>'.html_safe, author, method: :delete, data: {confirm: "You sure?"} %></td>
+      </tr>
+    </tbody>
+  <% end %>
+
+  <p><%= link_to '<i class="fa fa-plus fa-lg btn btn-primary" aria-hidden="true" data-toggle="tooltip" title="Add">Add author</i>'.html_safe, new_author_path %></p>
+
+  <div class="index_search">
+    <%= form_tag authors_path, method: :get, id: :search_form, class: "navbar-form" do %>
+      <%= text_field_tag :search, params[:search], class: "span2 form-control", placeholder: "Search Authors" %>
+      <button <i class="fa fa-search fa-lg btn btn-primary" aria-hidden="true" data-toggle="tooltip" title="Search"></i></button>
+    <% end %>
+  </div>
+
+  <% if @author.blank? %>
+    <h4>There are no authors <%= params[:search] %></h4>
+  <% end %>
+
+  <%= link_to t(".back"), authors_path %>
+</table>

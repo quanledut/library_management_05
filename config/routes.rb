@@ -1,3 +1,15 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root "library_management#home"
+  get "/signup", to: "users#new"
+  get "/help", to: "library_management#help"
+
+  post "/signup", to: "users#create"
+  get "/login", to: "sessions#new"
+  post "/login", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
+
+  resources :authors
+  resources :categories
+  resources :books
+  resources :users
 end

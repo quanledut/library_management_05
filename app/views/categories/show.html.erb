@@ -1,0 +1,19 @@
+<%= provide(:title, @category.name) %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><strong>Parent_ID</strong></th>
+      <th><strong>Name</strong></th>
+    </tr>
+    <tbody>
+      <tr>
+        <td><%= @category.parent_ID %></td>
+        <td><%= @category.name %></td>
+      </tr>
+    </tbody>
+  </thead>
+</table>
+
+<%= link_to t(".edit"), edit_category_path %>
+<%= link_to t(".back"), categories_path %>
